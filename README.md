@@ -1,4 +1,4 @@
-# Your Personalized Terrain Generator
+# Personalized Terrain Generator
 
 Welcome to my Terrain Generator project! This repository contains a customizable and intuitive Terrain Generator built using JavaScript and Perlin noise. With this tool, you can effortlessly create diverse landscapes and explore the art of procedural generation.
 
