@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terrain Generator</title>
+  </head>
+  <body>
+    <div class="Title_Div">
+      <h1>Terrain Generation</h1>
+    </div>
+
+    <div class="Settings">
+      <div class="Sliders">
+        <input
+          type="range"
+          class="Slider"
+          id="noiseValueX"
+          min="0.01"
+          max="0.1"
+          step="0.01"
+          value="0.02"
+        />
+        <input
+          type="range"
+          class="Slider"
+          id="noiseValueY"
+          min="0.01"
+          max="0.1"
+          step="0.01"
+          value="0.02"
+        />
+      </div>
+      <div class="Buttons">
+        <button id="GenerateBtn">Generate</button>
+      </div>
+    </div>
+    <canvas id="Terrain" width="1000" height="540"> </canvas>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Assistant');
+      * {
+        font-family: 'Assistant', serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        background-color: dimgray;
+      }
+
+      #Terrain {
+        border: 2px solid black;
+      }
+
+      .Settings {
+        border: 2px solid black; padding: 10px;
+      }
+
+      .Title_Div {
+        display: flex;
+        width: 50%;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid black;
+      }
+    </style>
+    <script src="./index.js"></script>
+  </body>
+</html>
